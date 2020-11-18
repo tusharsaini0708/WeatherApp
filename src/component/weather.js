@@ -9,14 +9,13 @@ const Weather = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const firstURL = "http://api.openweathermap.org/data/2.5/weather?q=";
-      const endURL =
-        "&units=metric&appid=b506986489a2e68bd6260c4068719ed1&units=metric&appid=b506986489a2e68bd6260c4068719ed1";
+      const firstURL = "https://api.openweathermap.org/data/2.5/weather?q=";
+      const endURL = "&units=metric&appid=b506986489a2e68bd6260c4068719ed1";
       const finalURL = firstURL + city + endURL;
       const { data } = await axios.get(finalURL);
       setDes(data.weather[0].description);
       setWeatherIcon(
-        "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png"
+        "https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png"
       );
       setTemp(data.main.temp);
     }

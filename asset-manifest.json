@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/WeatherApp/static/css/main.e61cab4a.chunk.css",
+    "main.js": "/WeatherApp/static/js/main.eae92380.chunk.js",
+    "main.js.map": "/WeatherApp/static/js/main.eae92380.chunk.js.map",
+    "runtime-main.js": "/WeatherApp/static/js/runtime-main.d3e98eb5.js",
+    "runtime-main.js.map": "/WeatherApp/static/js/runtime-main.d3e98eb5.js.map",
+    "static/css/2.ea1fbcf8.chunk.css": "/WeatherApp/static/css/2.ea1fbcf8.chunk.css",
+    "static/js/2.e25479f3.chunk.js": "/WeatherApp/static/js/2.e25479f3.chunk.js",
+    "static/js/2.e25479f3.chunk.js.map": "/WeatherApp/static/js/2.e25479f3.chunk.js.map",
+    "index.html": "/WeatherApp/index.html",
+    "static/css/2.ea1fbcf8.chunk.css.map": "/WeatherApp/static/css/2.ea1fbcf8.chunk.css.map",
+    "static/css/main.e61cab4a.chunk.css.map": "/WeatherApp/static/css/main.e61cab4a.chunk.css.map",
+    "static/js/2.e25479f3.chunk.js.LICENSE.txt": "/WeatherApp/static/js/2.e25479f3.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/WeatherApp/static/media/warmbg.a7f83012.jpg",
+    "static/media/font-awesome.min.css": "/WeatherApp/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d3e98eb5.js",
+    "static/css/2.ea1fbcf8.chunk.css",
+    "static/js/2.e25479f3.chunk.js",
+    "static/css/main.e61cab4a.chunk.css",
+    "static/js/main.eae92380.chunk.js"
+  ]
+}

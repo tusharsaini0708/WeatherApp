@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/48807wide.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +43,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.mainDiv {
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 340px;
+  height: 450px;
+  transition: all 0.3s;
+}
+.cold {
+  background-image: url("coldbg.jpg");
+}
+.warm {
+  background-image: url("warmbg.jpg");
+}
+.form-control {
+  display: inline;
+  width: 250px;
+  position: relative;
+  left: 45px;
+  top: 20px;
+  /* margin: 0 20px; */
+}
+
+i {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+  left: 10px;
 }

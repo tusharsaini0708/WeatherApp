@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/48807wide.jpg");
+  background-image: url("background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -64,14 +64,19 @@ body {
   position: relative;
   left: 45px;
   top: 20px;
-  /* margin: 0 20px; */
 }
 
-i {
+.fa-search {
   border: none;
   outline: none;
   cursor: pointer;
   position: relative;
   top: 20px;
   left: 10px;
+}
+.fa-circle-o {
+  position: relative;
+  top: -18px;
+  font-weight: 900;
+  font-size: 8px;
 }

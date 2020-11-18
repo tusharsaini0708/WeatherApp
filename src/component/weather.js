@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { current, day, month } from "./dayMonth";
 const Weather = () => {
   const [city, setCity] = useState("Delhi");
   const [tempCity, setTempCity] = useState("Delhi");
   const [temp, setTemp] = useState(0);
-  const [weatherIcon, setWeatherIcon] = useState("");
-  const [des, setDes] = useState("");
+  const [weatherIcon, setWeatherIcon] = useState(
+    "https://openweathermap.org/img/wn/10d@2x.png"
+  );
+  const [des, setDes] = useState("clear");
 
   useEffect(() => {
     async function fetchData() {
@@ -26,6 +29,7 @@ const Weather = () => {
     backgroundClass = "mainDiv cold";
   }
 
+  if (tempCity === "") setTempCity(city);
   return (
     <div className={backgroundClass}>
       <input
@@ -40,12 +44,21 @@ const Weather = () => {
         aria-hidden="true"
       ></i>
 
-      <h2 className="text-center my-3">{city}</h2>
-      <h3 className="text-center ">{temp} C</h3>
+      <h2 className="text-center my-5">{city}</h2>
+      <h3 className="text-center ">
+        {temp}
+        <i className="fa fa-circle-o" aria-hidden="true"></i> c
+      </h3>
       <div className="d-flex justify-content-around">
         <h4 className="d-flex align-items-center">{des}</h4>
         <img src={weatherIcon} alt="" />
       </div>
+      <h2 className="text-center">{day[current.getDay()]}</h2>
+      <h4 className="text-center mt-4">
+        {current.getDate()} {month[current.getMonth()]} {current.getHours()}:
+        {current.getMinutes() < 10 && "0"}
+        {current.getMinutes()}
+      </h4>
     </div>
   );
 };
